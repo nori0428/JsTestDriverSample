@@ -11,9 +11,9 @@ JSTESTDRIVER_BIN=${JSTESTDRIVER_DIR}/JsTestDriver-1.3.1.jar
 JSTESTDRIVER_CONF=${CWD}/JsTestDriver.conf
 
 if [ ${PLATFORM} = 'Darwin' ]; then
-    BROWSERS=${CWD}/mac/safari5
+    BROWSERS=tools/mac/safari
 elif [ ${PLATFORM} = 'Linux' ]; then
-    BROWSERS='/usr/bin/google-chrome $* &'
+    BROWSERS=tools/linux/chrome
 else
     echo 'Your OS has not been supported yet.'
     exit 1
