@@ -15,4 +15,7 @@ clean:
 doc:
 	(cd ${TOP_SRCDIR}; ${MAKE} $@)
 
+pack:
+	(cd ${TOP_SRCDIR}; ${MAKE} $@)
+
 # EOF
