@@ -4,7 +4,7 @@
 
 SUBDIRS=src tests
 
-.PHONY: all check clean server run
+.PHONY: all check clean server run doc pack
 
 %.subdirs:
 	@for subdir in ${SUBDIRS}; do \
@@ -24,5 +24,11 @@ server:
 
 run:
 	sh ./run.sh
+
+doc:
+	sh ./doc.sh
+
+pack:
+	sh ./pack.sh
 
 # EOF

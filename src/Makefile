@@ -2,7 +2,7 @@
 
 TOP_SRCDIR=..
 
-.PHONY: all check clean
+.PHONY: all check clean doc
 
 all: check
 
@@ -10,6 +10,9 @@ check:
 	(cd ${TOP_SRCDIR}; ${MAKE} $@)
 
 clean:
-	rm -f *~
+	rm -f *~ helloJsTestDriver.min.js
+
+doc:
+	(cd ${TOP_SRCDIR}; ${MAKE} $@)
 
 # EOF
